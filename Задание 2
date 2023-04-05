@@ -1,8 +1,7 @@
 package com.max.idea;
-public class main {
-    static double E = 3.6;
-    static byte F = 127;
 
-    public static void main (String [] args) {
-    }
+public class Practic2 {
+     double E = 3.6;
+     byte F = 127;
+
 }
