@@ -1,0 +1,10 @@
+package com.max.idea;
+public class Practic3 {
+    public static void main (String [] args) {
+        int [] massive = new int[] {2,4,6,8,10};
+        int temp = massive [4];
+        massive [4] = massive [0];
+        massive [0] = temp;
+        System.out.println(massive[0]+massive[(massive.length-1)/2]);
+    }
+}
