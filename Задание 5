@@ -1,0 +1,25 @@
+package com.max.idea;
+import java.util.Scanner;
+
+public class Practic5 {
+    public static void main (String [] args) throws java.io.IOException {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Введите два числа");
+        double x = sc.nextDouble();
+        double y = sc.nextDouble();
+        System.out.println("один из символов +, -, * или /");
+        char z = (char) System.in.read ();
+        if (z =='+'){
+            System.out.println(x+y);
+        }
+        else if (z =='-'){
+            System.out.println(x-y);
+        }
+        else if (z =='*'){
+            System.out.println(x*y);
+        }
+        else if (z =='/') {
+            System.out.println(x / y);
+        }
+    }
+}
