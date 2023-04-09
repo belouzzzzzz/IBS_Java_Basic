@@ -1,0 +1,19 @@
+package com.max.idea;
+import java.util.Scanner;
+
+public class Practic4 {
+    public static void main (String [] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Введите три числа");
+        double x=sc.nextDouble();
+        double y=sc.nextDouble();
+        double z=sc.nextDouble();
+        double mid = (x+y+z)/3;
+        System.out.println("Среднее арифметическое 3х введеныйх чисел = "+ mid);
+        int result = (int)Math.floor(mid/2);
+        System.out.println(result);
+        if (result>3) {
+        System.out.println("Программа выполнена корректно");
+    }
+}
+}
