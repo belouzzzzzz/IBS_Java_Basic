@@ -1,0 +1,48 @@
+package com.max.idea;
+import java.util.Scanner;
+
+public class Practic6 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Выберите что переводить: 1 - масса, 2 - расстояние");
+        int a = sc.nextInt();
+
+        if (a==1){
+            System.out.println("Выберите единицу измерения: 1 - грамм, 2 - унция, 3 - стоун, 4 - фунт");
+            int b = sc.nextInt();
+            System.out.println("Введите количество выбранных единиц");
+            int c = sc.nextInt();
+            if (b==1){
+                System.out.println("Результат:" + 1*c);
+            }
+            else if (b==2){
+                System.out.println("Результат:" + 0.035274*c);
+            }
+            else if (b==3){
+                System.out.println("Результат:" + 0.000157473*c);
+            }
+            else if (b==4){
+                System.out.println("Результат:" + 0.00220462*c);
+            }
+
+        if (a==2){
+            System.out.println("Выберите единицу измерения: 1 - метр, 2 - миля, 3 - ярд, 4 - фут");
+            int d = sc.nextInt();
+            System.out.println("Введите количество выбранных единиц");
+            int e = sc.nextInt();
+            if (d==1){
+                System.out.println("Результат:" + 1*e);
+            }
+            else if (d==2){
+                System.out.println("Результат:" + 0.00006*e);
+            }
+            else if (d==3){
+                System.out.println("Результат:" + 1.09361*e);
+            }
+            else if (d==4){
+                System.out.println("Результат:" + 3.28083*e);
+            }
+        }
+    }
+}
+}
