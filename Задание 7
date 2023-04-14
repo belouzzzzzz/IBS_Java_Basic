@@ -1,0 +1,24 @@
+package com.max.idea;
+import java.util.Scanner;
+
+public class Practic7 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Введи длину массива");
+        int size = sc.nextInt();
+        int mass [] = new int[size];
+        System.out.println("А теперь заполни массив");
+        for (int i=0; i<size; i++ ) {
+            mass[i] = sc.nextInt();
+        }
+    int x=23;
+    int y=3;
+    int z=8;
+        for (int i=0; i<size;  i++ ) {
+           if (x==mass[i]|y==mass[i]|z==mass[i]) {
+               System.out.println("Данное значение имеется в константах");
+           }
+        }
+
+    }
+}
