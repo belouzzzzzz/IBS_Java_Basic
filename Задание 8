@@ -1,0 +1,17 @@
+package com.max.idea;
+
+import java.util.Scanner;
+public class Practic8 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Введи любое положительное число");
+        int chislo = sc.nextInt();
+        int summa = 0;
+        for (int i=1; i<chislo; i++){
+            if (!(i%2==0)){
+                summa+=i;
+            }
+        }
+        System.out.println("Сумма всех нечетных чисел до " + chislo + " = " + summa);
+    }
+}
