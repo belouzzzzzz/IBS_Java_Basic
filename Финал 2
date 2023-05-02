@@ -1,0 +1,37 @@
+package com.max.idea;
+import java.util.Scanner;
+
+public class Final2 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String input = scanner.nextLine();
+        char sign = input.charAt(1);
+        int firstNum, secondNum;
+
+        if (input.charAt(0) == 'x') {
+            secondNum = Character.getNumericValue(input.charAt(2));
+            int result = input.charAt(4) - '0';
+            if (sign == '+') {
+                System.out.println(result - secondNum);
+            } else {
+                System.out.println(result + secondNum);
+            }
+        } else if (input.charAt(2) == 'x') {
+            firstNum = Character.getNumericValue(input.charAt(0));
+            int result = input.charAt(4) - '0';
+            if (sign == '+') {
+                System.out.println(result - firstNum);
+            } else {
+                System.out.println(firstNum - result);
+            }
+        } else {
+            firstNum = Character.getNumericValue(input.charAt(0));
+            secondNum = Character.getNumericValue(input.charAt(2));
+            if (sign == '+') {
+                System.out.println(secondNum + firstNum);
+            } else {
+                System.out.println(firstNum - secondNum);
+            }
+        }
+    }
+}
