@@ -1,0 +1,32 @@
+package com.max.idea;
+import java.util.Scanner;
+
+public class Final3 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите количество строк");
+        int n = scanner.nextInt(); 
+        scanner.nextLine(); 
+        String maxString = ""; 
+        int maxCount = 0; 
+
+        for (int i = 0; i < n; i++) { 
+            System.out.println("Введите " +(i+1)+ " строку");
+            String str = scanner.nextLine(); 
+            int count = 0; 
+
+            for (int j = 0; j < str.length(); j++) { 
+                if (str.indexOf(str.charAt(j)) == j) { 
+                    count++;
+                }
+            }
+
+            if (count > maxCount) { 
+                maxCount = count; 
+                maxString = str; 
+            }
+        }
+
+        System.out.println("Строка с максимальным количеством различных символов "+maxString); 
+    }
+}
