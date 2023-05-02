@@ -1,0 +1,14 @@
+public class Practic12 {
+    public static void main(String[] args) {
+
+        String Java = "I like Java!!!";
+        boolean a = Java.contains("Java");
+        boolean b = Java.startsWith("I like");
+        boolean c = Java.endsWith("!!!");
+        if (a==b==c==true){
+            System.out.println(Java.toUpperCase());
+        }
+        String Jovo = Java.replace('a', 'o');
+        System.out.println(Jovo.substring(7,11));
+    }
+}
