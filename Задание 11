@@ -1,0 +1,16 @@
+package com.max.idea;
+import java.util.Scanner;
+
+public class Practic11 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Ввод числа в строковую переменную");
+        String a = sc.next();
+        System.out.println("Ввод числа в переменную типа int");
+        int b = sc.nextInt();
+        int a1 = Integer.parseInt(a);
+        System.out.println("Больше число - " + Math.max(a1, b));
+        double c = Math.min(a1, b);
+        System.out.println("Меньшее число double - " + c);
+    }
+}
