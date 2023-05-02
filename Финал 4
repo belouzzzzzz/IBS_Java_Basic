@@ -1,0 +1,40 @@
+package com.max.idea;
+import java.util.Scanner;
+public class Final4 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Отгадай загадку. Сидит дед, во сто шуб одет, кто его раздевает, тот слезы проливает");
+        String answer1 = sc.nextLine();
+        int result = answer1.compareTo("Заархивированный вирус");
+        int help = answer1.compareTo("Подсказка");
+        if (result==0){
+            System.out.println(result);
+            System.out.println("Правильно!");
+        } else if (help==0) {
+            System.out.println("Это точно не лук");
+        }
+            System.out.println("Подумай еще!");
+            String answer2 = sc.nextLine();
+            int result2 = answer2.compareTo("Заархивированный вирус");
+            int help2 = answer2.compareTo("Подсказка");
+        if (help==0 & result2!=0) {
+            System.out.println("Обидно, приходи в другой раз");
+            System.exit(0);
+        }
+            if (result2==0) {
+                System.out.println("Правильно!");
+            } else if (help2==0) {
+                System.out.println("Подсказка уже недоступна");
+            }
+                System.out.println("Подумай еще!");
+                String answer3 = sc.nextLine();
+                int result3 = answer3.compareTo("Заархивированный вирус");
+                int help3 = answer3.compareTo("Подсказка");
+                if (result3==0) {
+                    System.out.println("Правильно!");
+                } else if (help3==0) {
+                    System.out.println("Подсказка уже недоступна");
+                    System.out.println("Обидно, приходи в другой раз");
+                }
+            }
+        }
