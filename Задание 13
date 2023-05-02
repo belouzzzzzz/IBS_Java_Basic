@@ -1,0 +1,19 @@
+package com.max.idea;
+import java.util.Scanner;
+
+public class Practic13 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Введите строку из слов, разделенных пробелами");
+        String stroka = sc.nextLine();
+        String words []= stroka.split(" ");
+        int latinWordsCount = 0;
+        for (String word : words) {
+            if (word.matches("[a-zA-Z]+")) {
+                System.out.println(word);
+                latinWordsCount++;
+            }
+        }
+        System.out.println("Количество латинских слов: " + latinWordsCount);
+    }
+    }
